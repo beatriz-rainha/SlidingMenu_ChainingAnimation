@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap');
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+   background-color: rosybrown;
+   font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 13em;
+	font-variation-settings: "wght" 300;
+	transition: all 0.3s;
+}
+
+h1:hover {
+	font-variation-settings: "wght" 700;
+	transition: all 0.3s;
+	color: darkolivegreen;
+}
+
+h2 {
+	text-align: center;
+	font-size: 7em;
+	font-variation-settings: "wght" 300;
+	transition: all 0.3s;
+}
+
+h2:hover {
+	font-variation-settings: "wght" 700;
+	transition: all 0.3s;
+}
+
+p {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+.menuTab{
+  width: 90px;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+  
+.menuTab div {
+    width: 35px;
+    height: 4px;
+    display: block;
+	margin-top: 13px;
+	margin-left: 28px;
+	background-color: black;
+  }
+
+.menuTab.active {
+  left: 300px;
+  transition: all 0.5s ease-in-out;
+  background-color: darkolivegreen;
+}
+
+.menuTab.active  div {
+ background-color: peachpuff;
+  }
+
+.menuHide{
+  width: 300px;
+  left: -300px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
+ 
+}
+
+ul {
+	margin-top: 250px;
+}
+
+li{
+	height: 70px;
+	list-style-type: none;
+	line-height: 70px;
+}
+
+
+a {
+	padding-top: 25px;
+	text-decoration: none;
+	color: peachpuff;
+	font-weight: 700;
+}
+
+a:hover {
+	color: rosybrown;
+}
+
+.menuHide.show{
+  left: 0px;
+  background-color: darkolivegreen;
+  transition: all 0.5s ease-in-out;
+}
